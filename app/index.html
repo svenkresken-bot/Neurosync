@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>NeuroSync Gangverlauf</title>
+  <meta name="description" content="Gang-Tracking mit dem NeuroSync-Rückensensor: Schrittlänge, Kadenz, Symmetrie und Verlauf.">
+  <meta name="theme-color" content="#1a1a19">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><use href="icon.svg#i"/></svg><span>NeuroSync</span></div>
+    <button id="conn-chip" class="chip conn off" aria-live="polite"><span class="led"></span><span id="conn-text">Nicht verbunden</span></button>
+  </header>
+
+  <main>
+    <section id="view-dash" class="view"></section>
+    <section id="view-live" class="view" hidden></section>
+    <section id="view-history" class="view" hidden></section>
+    <section id="view-settings" class="view" hidden></section>
+  </main>
+
+  <nav class="tabs" aria-label="Hauptnavigation">
+    <button data-view="dash" class="active"><svg viewBox="0 0 24 24"><path d="M4 19V9m6 10V5m6 14v-7m4 7H2"/></svg>Verlauf</button>
+    <button data-view="live"><svg viewBox="0 0 24 24"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg>Messung</button>
+    <button data-view="history"><svg viewBox="0 0 24 24"><path d="M5 5h14M5 12h14M5 19h14"/></svg>Messungen</button>
+    <button data-view="settings"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10l2 2M5 19l2-2m10-10l2-2"/></svg>Einstellungen</button>
+  </nav>
+
+  <dialog id="dlg"></dialog>
+  <div id="toast" role="status" aria-live="polite" hidden></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

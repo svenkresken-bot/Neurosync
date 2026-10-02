@@ -1,0 +1,11 @@
+{
+  "name": "neurosync",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Gang-Tracking-App (Web Bluetooth) für den NeuroSync-Rückensensor (XIAO nRF52840 Sense)",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "serve": "python3 -m http.server 8080 --directory app"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "NeuroSync Gangverlauf",
+  "short_name": "NeuroSync",
+  "description": "Gang-Tracking mit Rückensensor für den MS-Verlauf",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#1a1a19",
+  "theme_color": "#1a1a19",
+  "lang": "de",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
